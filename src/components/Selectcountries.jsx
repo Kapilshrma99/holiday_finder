@@ -9,7 +9,7 @@ const Selectcountries = () => {
   const callApi = async () => {
     try {
       const res = await fetch(
-        `https://calendarific.com/api/v2/countries?&api_key=I3UGH0mnqQbgufLVuWhPyykjXybr8AFD`
+        `https://calendarific.com/api/v2/countries?&api_key=....your api...`
       );
       const data = await res.json();
       const countries = data.response.countries || [];
