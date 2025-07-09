@@ -11,7 +11,7 @@ const Countrycontxtprovider = ({ children }) => {
     
     if (countrycode && year) {
       fetch(
-        `https://calendarific.com/api/v2/holidays?&api_key=I3UGH0mnqQbgufLVuWhPyykjXybr8AFD&country=${countrycode}&year=${year}`
+        `https://calendarific.com/api/v2/holidays?&api_key=....yourapi....&country=${countrycode}&year=${year}`
       )
         .then((res) => res.json())
         .then((data) => setHoliday(data.response.holidays || []))
